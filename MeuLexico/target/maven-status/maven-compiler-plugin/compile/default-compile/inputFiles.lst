@@ -1,0 +1,12 @@
+/home/yago/Desktop/Compiladores/CompiladorT4/t4/MeuLexico/src/main/java/br/ufscar/dc/compiladores/meu/lexico/Contexto.java
+/home/yago/Desktop/Compiladores/CompiladorT4/t4/MeuLexico/target/generated-sources/antlr4/br/ufscar/dc/compiladores/meu/lexico/MeuLexer.java
+/home/yago/Desktop/Compiladores/CompiladorT4/t4/MeuLexico/src/main/java/br/ufscar/dc/compiladores/meu/lexico/SimbolosTabela.java
+/home/yago/Desktop/Compiladores/CompiladorT4/t4/MeuLexico/src/main/java/br/ufscar/dc/compiladores/meu/lexico/Principal.java
+/home/yago/Desktop/Compiladores/CompiladorT4/t4/MeuLexico/target/generated-sources/antlr4/br/ufscar/dc/compiladores/meu/lexico/MeuParserBaseListener.java
+/home/yago/Desktop/Compiladores/CompiladorT4/t4/MeuLexico/src/main/java/br/ufscar/dc/compiladores/meu/lexico/LaSemantico.java
+/home/yago/Desktop/Compiladores/CompiladorT4/t4/MeuLexico/src/main/java/br/ufscar/dc/compiladores/meu/lexico/LaSemanticoUtils.java
+/home/yago/Desktop/Compiladores/CompiladorT4/t4/MeuLexico/target/generated-sources/antlr4/br/ufscar/dc/compiladores/meu/lexico/MeuParserBaseVisitor.java
+/home/yago/Desktop/Compiladores/CompiladorT4/t4/MeuLexico/src/main/java/br/ufscar/dc/compiladores/meu/lexico/MyCustomErrorListener.java
+/home/yago/Desktop/Compiladores/CompiladorT4/t4/MeuLexico/target/generated-sources/antlr4/br/ufscar/dc/compiladores/meu/lexico/MeuParserVisitor.java
+/home/yago/Desktop/Compiladores/CompiladorT4/t4/MeuLexico/target/generated-sources/antlr4/br/ufscar/dc/compiladores/meu/lexico/MeuParserListener.java
+/home/yago/Desktop/Compiladores/CompiladorT4/t4/MeuLexico/target/generated-sources/antlr4/br/ufscar/dc/compiladores/meu/lexico/MeuParser.java

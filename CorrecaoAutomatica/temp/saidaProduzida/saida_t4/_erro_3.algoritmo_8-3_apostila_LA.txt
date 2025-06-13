@@ -1,0 +1,2 @@
+Linha 10: identificador tVinho ja declarado anteriormente
+Fim da compilacao
