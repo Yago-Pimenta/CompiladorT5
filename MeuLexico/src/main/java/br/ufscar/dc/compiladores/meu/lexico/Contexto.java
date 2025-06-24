@@ -3,6 +3,9 @@ package br.ufscar.dc.compiladores.meu.lexico;
 import java.util.LinkedList;
 import java.util.List;
 
+import br.ufscar.dc.compiladores.meu.lexico.SimbolosTabela.EntradaSimbolo;
+import br.ufscar.dc.compiladores.meu.lexico.SimbolosTabela.TipoDadoLA;
+
 public class Contexto {
 
     private LinkedList<SimbolosTabela> pilhaDeContextos;
@@ -29,4 +32,8 @@ public class Contexto {
     public void sairDoContexto() {
         pilhaDeContextos.pop();
     }
+    /** Retorna o tipo da variável já declarada ou INTEIRO por padrão */
+
+
+
 }

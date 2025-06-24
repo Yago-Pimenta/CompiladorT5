@@ -17,11 +17,14 @@ import org.antlr.v4.runtime.dfa.DFA;
         PrintWriter pw;
     
         static boolean isErrorFound = false;
-    
+        private boolean errorFound = false;
+
         public MyCustomErrorListener(PrintWriter pw) {
             this.pw = pw;
         }
-    
+        public boolean hasError() {
+            return errorFound;
+        }
         @Override
         public void syntaxError(Recognizer<?, ?> arg0, Object arg1, int arg2, int arg3, String arg4, RecognitionException arg5) {
     

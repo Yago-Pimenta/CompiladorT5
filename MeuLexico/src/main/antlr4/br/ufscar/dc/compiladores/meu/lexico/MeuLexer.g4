@@ -1,5 +1,7 @@
 lexer grammar MeuLexer;
 
+
+
 /* Palavras-chave para controle de fluxo do algoritmo */
 ALGORITMO: 'algoritmo';
 FIM_ALGORITMO: 'fim_algoritmo';

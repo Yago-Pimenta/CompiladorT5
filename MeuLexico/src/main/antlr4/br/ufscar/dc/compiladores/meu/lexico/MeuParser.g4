@@ -1,5 +1,6 @@
 parser grammar MeuParser;
 
+
 options {
   tokenVocab=MeuLexer;
 }
@@ -66,11 +67,22 @@ cmd : cmdLeia
 
 cmdLeia : 'leia' '(' expressao (',' expressao)* ')' ;
 
-cmdEscreva : 'escreva' '(' expressao (',' expressao)* ')' ;
+cmdEscreva
+  : 'escreva' '(' expressao ')'
+  ;
 
-cmdSe : 'se' expressao 'entao' (cmd)* ('senao' (cmd)*)? 'fim_se' ;
+cmdSe
+  : 'se' expressao 'entao' thenCmds+=cmd* 
+    ('senao' elseCmds+=cmd*)? 
+    'fim_se'
+  ;
 
-cmdCaso : 'caso' exp_aritmetica 'seja' selecao ('senao' (cmd)*)? 'fim_caso' ;
+
+cmdCaso
+   : 'caso' exp_aritmetica 'seja' selecao
+     ('senao' elseCmds+=cmd*)?
+     'fim_caso'
+   ;
 
 cmdPara : 'para' IDENT '<-' exp_aritmetica 'ate' exp_aritmetica 'faca' (cmd)* 'fim_para' ;
 

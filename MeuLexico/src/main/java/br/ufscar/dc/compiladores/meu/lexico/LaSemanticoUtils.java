@@ -7,6 +7,8 @@ import java.util.stream.Collectors;
 import org.antlr.v4.runtime.Token;
 import org.antlr.v4.runtime.tree.TerminalNode;
 
+import br.ufscar.dc.compiladores.meu.lexico.SimbolosTabela.TipoDadoLA;
+
 public class LaSemanticoUtils {
 
     public static List<String> listaErros = new ArrayList<>();
@@ -158,5 +160,31 @@ public static SimbolosTabela.TipoDadoLA determinarTipo(Contexto escopos, MeuPars
             default: return SimbolosTabela.TipoDadoLA.INVALIDO;
         }
     }
+    public static String getCType(TipoDadoLA tipo) {
+        switch (tipo) {
+            case INTEIRO: return "int";
+            case REAL:    return "float";
+            case CADEIA:  return "char";
+            case LOGICO:  return "int";
+            default:      return "void";
+        }
+    }
+public static String getCType(String textoTipo) {
+    // primeiro converte a String para o enum
+    TipoDadoLA tipoEnum = getTipo(textoTipo);
+    // depois retorna o C type
+    return getCType(tipoEnum);
+}
+
+public static String getCTypeSymbol(TipoDadoLA tipo) {
+    switch (tipo) {
+        case INTEIRO: return "d";
+        case REAL:    return "f";
+        case CADEIA:  return "s";
+        case LOGICO:  return "d";
+        default:      return "";
+    }
+}
+
 }
 
